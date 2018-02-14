@@ -1,0 +1,36 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+float volume(float);
+float volume(float,float,float);
+float volume(float,float);
+int main()
+{
+	float r,lc,bc,hc,hcy,bt,VCU,VCY,AT,rs,VS,rc;
+	cout<<"Enter The radius Of The Sphere\n";
+	cin>>rs;
+	cout<<"Enter The Radius And Height Of Cylinder\n";
+	cin>>rc>>hcy;
+	cout<<"Enter Lenght,Breath And Height OF The Cuboid\n";
+	cin>>lc>>bc>>hc;
+	VS=volume(rs);
+	VCY=volume(rc,hcy);
+	VCU=volume(lc,bc,hc);
+	cout<<"Volume Of The Sphere="<<VS<<"\n";
+	cout<<"Volume Of The Cylinder="<<VCY<<"\n";
+	cout<<"Volume Of The Cuboid="<<VCU<<"\n";
+	getch();
+	return 0;
+}
+float volume(float rc)
+{
+	return(1.3333333*3.1415926*rc*rc*rc);
+}
+float volume(float r,float h)
+{
+	return(3.1415926*r*r*h);
+}
+float volume(float l,float b,float h)
+{
+	return(l*b*h);
+}
