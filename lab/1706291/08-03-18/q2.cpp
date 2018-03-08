@@ -11,7 +11,7 @@ class coordinate
 			this->y=y;
 		}
 	
-		coordinate operator +=(+++-coordinate A)
+		coordinate operator +=(coordinate A)
 		{
 			//coordinate temp;
 			x+=A.x;
